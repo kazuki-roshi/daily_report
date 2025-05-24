@@ -53,4 +53,4 @@ RUN echo "root:rootpass" | chpasswd
 # 8. 起動時コマンドの指定
 COPY startup.sh /startup.sh
 RUN chmod 744 /startup.sh
-CMD /startup.sh
+CMD ["/startup.sh"]
